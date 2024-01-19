@@ -1,0 +1,16 @@
+.allBtn {
+  padding: 10px 50px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #00338d;
+  border: 1px solid #00338d;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.allBtn:hover {
+  background-color: #1e49e2;
+  color: #ffffff;
+  border-color: #1e49e2;
+  text-decoration: underline;
+}
