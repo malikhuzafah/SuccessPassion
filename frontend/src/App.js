@@ -24,6 +24,8 @@ import PrivateEnterprise from "./pages/Services/PrivateEnterprise";
 import Offices from "./pages/About/Offices";
 import Tax from "./pages/Services/Tax";
 import StrategicAlliances from "./pages/About/StrategicAlliances";
+import CorporatReporting from "./pages/About/CorporateReporting";
+import MenuBarDetails from "./components/MenuBar/MenuBarDetails";
 import axios from "axios";
 
 function App() {
@@ -73,6 +75,8 @@ function App() {
     <Router>
       <div>
         <MenuBar />
+        {/* <MenuBarDetails menuBarDetails={["HOme", "About"]} /> */}
+
         <div>
           <Routes>
             <Route
@@ -84,6 +88,10 @@ function App() {
             <Route
               path="/home/about/strategic-alliances"
               element={<StrategicAlliances />}
+            ></Route>
+            <Route
+              path="/home/about/corporate-reporting"
+              element={<CorporatReporting />}
             ></Route>
             <Route path="/home/about/offices" element={<Offices />}></Route>
             <Route path="/home/about/who-we-are" element={<WhoWeAre />}></Route>
