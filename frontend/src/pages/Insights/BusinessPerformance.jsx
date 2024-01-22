@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
+import TopBanner from "../../components/TopBanner/TopBanner";
 
 const BusinessPerformance = () => {
   const navigate = useNavigate();
@@ -29,20 +30,23 @@ const BusinessPerformance = () => {
 
   return (
     <div>
-      <div>
-        <Container>
-          <h1>Business Performance</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis
-            suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae,
-            architecto accusantium nihil blanditiis id voluptas soluta culpa
-            cupiditate possimus voluptatum atque?
-          </p>
-        </Container>
-      </div>
-      <Container>
+      <TopBanner
+        title={"Business Performance"}
+        desc={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae, architecto accusantium nihil blanditiis id voluptas soluta culpa cupiditate possimus voluptatum atque?"
+        }
+      />
+      <Container
+        style={{
+          paddingTop: "20px",
+        }}
+      >
         <CustomSeparator breadcrumbs={breadcrumbs} />
-        <div>
+        <div
+          style={{
+            padding: "40px 0",
+          }}
+        >
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
             exercitationem. Est odit, delectus explicabo quo velit, corporis
@@ -57,7 +61,7 @@ const BusinessPerformance = () => {
             sm={6}
             style={{
               backgroundColor: "#ffffff",
-              padding: "0 5px 0 0",
+              // padding: "0 5px 0 0",
             }}
           >
             <div
@@ -91,7 +95,7 @@ const BusinessPerformance = () => {
             xs={12}
             sm={6}
             style={{
-              padding: "0 0 0 5px",
+              // padding: "0 0 0 5px",
               backgroundColor: "#ffffff",
             }}
           >
@@ -122,9 +126,11 @@ const BusinessPerformance = () => {
             item
             sm={12}
             md={4}
-            style={{
-              padding: "10px 5px 0 0",
-            }}
+            style={
+              {
+                // padding: "10px 5px 0 0",
+              }
+            }
           >
             <div
               style={{
@@ -153,9 +159,11 @@ const BusinessPerformance = () => {
             item
             sm={12}
             md={4}
-            style={{
-              padding: "10px 5px 0 5px",
-            }}
+            style={
+              {
+                // padding: "10px 5px 0 5px",
+              }
+            }
           >
             <div
               style={{
@@ -184,61 +192,12 @@ const BusinessPerformance = () => {
             item
             sm={12}
             md={4}
-            style={{
-              padding: "10px 0 0 5px",
-            }}
+            style={
+              {
+                // padding: "10px 0 0 5px",
+              }
+            }
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
-        </Grid>
-
-        <Grid container spacing={2}>
-          <Grid item sm={12} md={6}>
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
-          <Grid item sm={12} md={6}>
             <div
               style={{
                 backgroundColor: "#323232",

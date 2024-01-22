@@ -22,7 +22,6 @@ import { ClickAwayListener } from "@mui/material";
 
 function MenuBar() {
   const [open, setOpen] = React.useState(false);
-  const [menuBarDetails, setMenuBarDetails] = React.useState(null);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
@@ -59,7 +58,7 @@ function MenuBar() {
       },
       {
         name: "ESG and sustainability",
-        link: "/insights",
+        link: "/home/insights/esg",
       },
       {
         name: "Regulatory changes",
@@ -85,6 +84,7 @@ function MenuBar() {
       link: "/insights",
     },
   };
+  const [menuBarDetails, setMenuBarDetails] = React.useState(insights);
 
   const industries = {
     links: [
@@ -94,7 +94,7 @@ function MenuBar() {
       },
       {
         name: "Consumer & Retail",
-        link: "/industries",
+        link: "/home/industries/retail",
       },
       {
         name: "Infrastructure",
@@ -465,7 +465,7 @@ function MenuBar() {
                       } else if (page.name === "About us") {
                         setMenuBarDetails(about);
                       } else {
-                        setMenuBarDetails(null);
+                        setMenuBarDetails(insights);
                       }
 
                       if (page.name === menuBarDetails.main.name && open) {

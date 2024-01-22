@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
+import TopBanner from "../../components/TopBanner/TopBanner";
 
 const RegulatoryChanges = () => {
   const navigate = useNavigate();
@@ -29,19 +30,13 @@ const RegulatoryChanges = () => {
 
   return (
     <div>
-      <div>
-        <Container>
-          <h1>Regulatory Changes</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis
-            suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae,
-            architecto accusantium nihil blanditiis id voluptas soluta culpa
-            cupiditate possimus voluptatum atque?
-          </p>
-        </Container>
-      </div>
+      <TopBanner
+        title={"Regulatory Changes"}
+        desc={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae,"
+        }
+      />
       <Container>
-        <CustomSeparator breadcrumbs={breadcrumbs} />
         <div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
@@ -50,7 +45,113 @@ const RegulatoryChanges = () => {
             consectetur magni, optio eius adipisci.
           </p>
         </div>
-        <Grid container spacing={2}></Grid>
+        <Grid container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            style={{
+              backgroundColor: "#ffffff",
+              // padding: "0 5px 0 0",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#323232",
+                height: "400px",
+                display: "flex",
+                alignItems: "end",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "#ffffff",
+                  padding: "10px",
+                  width: "100%",
+                  overflow: "hidden",
+                  height: "170px",
+                }}
+              >
+                <h3>Human-centric AI and the workplace: Live event</h3>
+                <p>
+                  Join us at 1:00pm CET to hear Brad Smith, President of
+                  Microsoft on AI on actions that business can take.
+                </p>
+              </div>
+            </div>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            style={{
+              backgroundColor: "#ffffff",
+              // padding: "0 5px 0 0",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#323232",
+                height: "400px",
+                display: "flex",
+                alignItems: "end",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "#ffffff",
+                  padding: "10px",
+                  width: "100%",
+                  overflow: "hidden",
+                  height: "170px",
+                }}
+              >
+                <h3>Human-centric AI and the workplace: Live event</h3>
+                <p>
+                  Join us at 1:00pm CET to hear Brad Smith, President of
+                  Microsoft on AI on actions that business can take.
+                </p>
+              </div>
+            </div>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            style={{
+              backgroundColor: "#ffffff",
+              // padding: "0 5px 0 0",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#323232",
+                height: "400px",
+                display: "flex",
+                alignItems: "end",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "#ffffff",
+                  padding: "10px",
+                  width: "100%",
+                  overflow: "hidden",
+                  height: "170px",
+                }}
+              >
+                <h3>Human-centric AI and the workplace: Live event</h3>
+                <p>
+                  Join us at 1:00pm CET to hear Brad Smith, President of
+                  Microsoft on AI on actions that business can take.
+                </p>
+              </div>
+            </div>
+          </Grid>
+        </Grid>
 
         <div>
           <h1

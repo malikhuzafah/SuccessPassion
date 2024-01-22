@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
+import TopBanner from "../../components/TopBanner/TopBanner";
 
 const BusinessProtection = () => {
   const navigate = useNavigate();
@@ -29,20 +30,23 @@ const BusinessProtection = () => {
 
   return (
     <div>
-      <div>
-        <Container>
-          <h1>Business Protection</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis
-            suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae,
-            architecto accusantium nihil blanditiis id voluptas soluta culpa
-            cupiditate possimus voluptatum atque?
-          </p>
-        </Container>
-      </div>
-      <Container>
+      <TopBanner
+        title={"Business Protection"}
+        desc={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae, architecto accusantium nihil blanditiis id voluptas soluta culpa cupiditate possimus voluptatum atque?"
+        }
+      />
+      <Container
+        style={{
+          paddingTop: "20px",
+        }}
+      >
         <CustomSeparator breadcrumbs={breadcrumbs} />
-        <div>
+        <div
+          style={{
+            padding: "40px 0",
+          }}
+        >
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
             exercitationem. Est odit, delectus explicabo quo velit, corporis
@@ -50,7 +54,258 @@ const BusinessProtection = () => {
             consectetur magni, optio eius adipisci.
           </p>
         </div>
-        <Grid container spacing={2}></Grid>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <a href="#" className="link2">
+              <div
+                style={{
+                  height: "200px",
+                  backgroundColor: "#323232",
+                }}
+              ></div>
+              <div
+                style={{
+                  padding: "5px",
+                }}
+              >
+                <div>Financial Strength and reporting</div>
+                <p
+                  style={{
+                    fontWeight: "normal",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum id architecto autem, blanditiis labore velit quis,
+                </p>
+              </div>
+            </a>
+          </Grid>
+        </Grid>
 
         <div>
           <h1

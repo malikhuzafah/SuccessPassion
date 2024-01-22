@@ -25,6 +25,7 @@ import Offices from "./pages/About/Offices";
 import Tax from "./pages/Services/Tax";
 import StrategicAlliances from "./pages/About/StrategicAlliances";
 import CorporatReporting from "./pages/About/CorporateReporting";
+import ESG from "./pages/Insights/ESG";
 import MenuBarDetails from "./components/MenuBar/MenuBarDetails";
 import axios from "axios";
 
@@ -107,6 +108,7 @@ function App() {
               path="/home/insights/digital-adoption"
               element={<DigitalAdoption />}
             ></Route>
+            <Route path="/home/insights/esg" element={<ESG />}></Route>
             <Route
               path="/home/insights/regulatory-changes"
               element={<RegulatoryChanges />}

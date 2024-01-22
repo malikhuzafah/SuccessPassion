@@ -7,7 +7,7 @@ import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
 import TopBanner from "../../components/TopBanner/TopBanner";
 
-const DigitalAdoption = () => {
+const ESG = () => {
   const navigate = useNavigate();
 
   const breadcrumbs = [
@@ -31,261 +31,251 @@ const DigitalAdoption = () => {
   return (
     <div>
       <TopBanner
-        title={"Digital Adoption And Transformation"}
-        desc={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae, architecto accusantium nihil blanditiis id voluptas soluta culpa cupiditate possimus voluptatum atque?"
-        }
+        title={"Environmental, social and governance (ESG)"}
+        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
       />
       <Container
         style={{
           paddingTop: "20px",
         }}
       >
-        <CustomSeparator breadcrumbs={breadcrumbs} />
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={9}>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos amet placeat cum recusandae totam, hic cupiditate
+                sit maiores alias eaque necessitatibus tempore. Voluptatem
+                repellendus vitae aut et architecto sapiente sit?;Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Inventore tempore
+                quisquam, error, mollitia est deleniti, assumenda facere at
+                harum debitis voluptas corrupti tempora aperiam accusantium
+                iure! Minus incidunt alias voluptatibus! Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Dignissimos amet placeat cum
+                recusandae totam, hic cupiditate sit maiores alias eaque
+                necessitatibus tempore. Voluptatem repellendus vitae aut et
+                architecto sapiente sit?;Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Inventore tempore quisquam, error, mollitia
+                est deleniti, assumenda facere at harum debitis voluptas
+                corrupti tempora aperiam accusantium iure! Minus incidunt alias
+                voluptatibus! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Dignissimos amet placeat cum recusandae totam,
+                hic cupiditate sit maiores alias eaque necessitatibus tempore.
+                Voluptatem repellendus vitae aut et architecto sapiente
+                sit?;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore tempore quisquam, error, mollitia est deleniti,
+                assumenda facere at harum debitis voluptas corrupti tempora
+                aperiam accusantium iure! Minus incidunt alias voluptatibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos amet placeat cum recusandae totam, hic cupiditate
+                sit maiores alias eaque necessitatibus tempore. Voluptatem
+                repellendus vitae aut et architecto sapiente sit?;Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Inventore tempore
+                quisquam, error, mollitia est deleniti, assumenda facere at
+                harum debitis voluptas corrupti tempora aperiam accusantium
+                iure! Minus incidunt alias voluptatibus!
+              </p>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <div
+              style={{
+                backgroundColor: "#323232",
+                height: "100%",
+                padding: "20px",
+                color: "#ffffff",
+              }}
+            >
+              <h3>Global economic outlook</h3>
+              <p>Trending cautiously amid risks.</p>
+            </div>
+          </Grid>
+        </Grid>
         <div
           style={{
             padding: "40px 0",
           }}
         >
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-            exercitationem. Est odit, delectus explicabo quo velit, corporis
-            facilis repellendus molestias voluptatibus saepe vitae. Expedita vel
-            consectetur magni, optio eius adipisci.
-          </p>
-        </div>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <a
-              href=""
+          <h1
+            style={{
+              textAlign: "center",
+            }}
+          >
+            Featured Content
+          </h1>
+          <Grid container spacing={2}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
               style={{
-                textDecoration: "none",
-                color: "#000000",
+                backgroundColor: "#ffffff",
+                // padding: "0 5px 0 0",
               }}
             >
               <div
                 style={{
+                  backgroundColor: "#323232",
                   height: "400px",
                   display: "flex",
-                  alignItems: "center",
-                  backgroundColor: "#323232",
+                  alignItems: "end",
                   padding: "20px",
                 }}
               >
                 <div
                   style={{
                     backgroundColor: "#ffffff",
-                    padding: "50px",
+                    padding: "10px",
+                    width: "100%",
+                    overflow: "hidden",
+                    height: "170px",
                   }}
                 >
-                  <h3>Make the difference</h3>
+                  <h3>Human-centric AI and the workplace: Live event</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Join us at 1:00pm CET to hear Brad Smith, President of
+                    Microsoft on AI on actions that business can take.
                   </p>
                 </div>
               </div>
-            </a>
-          </Grid>
-          <Grid
-            item
-            sm={12}
-            md={4}
-            style={
-              {
-                // padding: "10px 0 0 5px",
-              }
-            }
-          >
-            <div
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={6}
               style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
+                backgroundColor: "#ffffff",
+                // padding: "0 5px 0 0",
               }}
             >
               <div
                 style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
-          <Grid
-            item
-            sm={12}
-            md={4}
-            style={
-              {
-                // padding: "10px 0 0 5px",
-              }
-            }
-          >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
-          <Grid
-            item
-            sm={12}
-            md={4}
-            style={
-              {
-                // padding: "10px 0 0 5px",
-              }
-            }
-          >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
                   backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
+                  height: "400px",
+                  display: "flex",
+                  alignItems: "end",
+                  padding: "20px",
                 }}
               >
-                <div>Financial Strength and reporting</div>
-                <p
+                <div
                   style={{
-                    fontWeight: "normal",
+                    backgroundColor: "#ffffff",
+                    padding: "10px",
+                    width: "100%",
+                    overflow: "hidden",
+                    height: "170px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
+                  <h3>Human-centric AI and the workplace: Live event</h3>
+                  <p>
+                    Join us at 1:00pm CET to hear Brad Smith, President of
+                    Microsoft on AI on actions that business can take.
+                  </p>
+                </div>
               </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
                   style={{
-                    fontWeight: "normal",
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
                   style={{
-                    fontWeight: "normal",
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
                   style={{
-                    fontWeight: "normal",
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
+                  style={{
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
+                  }}
+                >
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
 
         <div>
           <h1
@@ -670,4 +660,4 @@ const DigitalAdoption = () => {
   );
 };
 
-export default DigitalAdoption;
+export default ESG;

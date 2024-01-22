@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
+import TopBanner from "../../components/TopBanner/TopBanner";
 
 const FinancialServices = () => {
   const navigate = useNavigate();
@@ -39,47 +40,64 @@ const FinancialServices = () => {
 
   return (
     <div>
-      <div>
-        <Container>
-          <h1>Financial Services</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis
-            suscipit molestiae cum cupiditate. Voluptates dolorum, sequi quae,
-            architecto accusantium nihil blanditiis id voluptas soluta culpa
-            cupiditate possimus voluptatum atque?
-          </p>
-        </Container>
-      </div>
-      <Container>
+      <TopBanner
+        title={"Financial Services"}
+        desc={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis suscipit molestiae cum cupiditate."
+        }
+      />
+
+      <Container
+        style={{
+          paddingTop: "20px",
+        }}
+      >
         <CustomSeparator breadcrumbs={breadcrumbs} />
         <Grid container spacing={2}>
-          <Grid item sm={12} md={9}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              pariatur tempore ea molestiae quidem ipsa, nulla reiciendis
-              facilis odit repudiandae nostrum. Consectetur id reiciendis
-              reprehenderit quisquam nulla eius dolore aspernatur? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quia eos, modi
-              quisquam suscipit magni blanditiis. Cum nobis libero qui sed, iure
-              vitae beatae totam iusto expedita blanditiis neque eius sapiente.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatum reiciendis quos quas, consectetur eligendi nulla animi
-              ratione ea facilis numquam commodi sapiente iusto repellendus
-              omnis tempora expedita laborum. Ipsam, at! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Ad quisquam et error aliquid
-              quidem, modi tempore. Nihil accusamus perspiciatis, doloremque
-              ratione, ab obcaecati optio veritatis modi eius itaque blanditiis
-              deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Sequi sunt ex deserunt possimus dolor odit quibusdam.
-              Voluptatibus cupiditate, eligendi ipsa nisi nesciunt molestias,
-              numquam, quod optio vero officiis est commodi?
-            </p>
+          <Grid item xs={12} md={9}>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos amet placeat cum recusandae totam, hic cupiditate
+                sit maiores alias eaque necessitatibus tempore. Voluptatem
+                repellendus vitae aut et architecto sapiente sit?;Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Inventore tempore
+                quisquam, error, mollitia est deleniti, assumenda facere at
+                harum debitis voluptas corrupti tempora aperiam accusantium
+                iure! Minus incidunt alias voluptatibus! Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Dignissimos amet placeat cum
+                recusandae totam, hic cupiditate sit maiores alias eaque
+                necessitatibus tempore. Voluptatem repellendus vitae aut et
+                architecto sapiente sit?;Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Inventore tempore quisquam, error, mollitia
+                est deleniti, assumenda facere at harum debitis voluptas
+                corrupti tempora aperiam accusantium iure! Minus incidunt alias
+                voluptatibus! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Dignissimos amet placeat cum recusandae totam,
+                hic cupiditate sit maiores alias eaque necessitatibus tempore.
+                Voluptatem repellendus vitae aut et architecto sapiente
+                sit?;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore tempore quisquam, error, mollitia est deleniti,
+                assumenda facere at harum debitis voluptas corrupti tempora
+                aperiam accusantium iure! Minus incidunt alias voluptatibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos amet placeat cum recusandae totam, hic cupiditate
+                sit maiores alias eaque necessitatibus tempore. Voluptatem
+                repellendus vitae aut et architecto sapiente sit?;Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Inventore tempore
+                quisquam, error, mollitia est deleniti, assumenda facere at
+                harum debitis voluptas corrupti tempora aperiam accusantium
+                iure! Minus incidunt alias voluptatibus!
+              </p>
+            </div>
           </Grid>
-          <Grid item sm={12} md={3}>
+          <Grid item xs={12} md={3}>
             <div
               style={{
-                height: "100%",
                 backgroundColor: "#323232",
+                height: "100%",
+                padding: "20px",
+                color: "#ffffff",
               }}
             ></div>
           </Grid>
@@ -225,7 +243,33 @@ const FinancialServices = () => {
           >
             Latest Insights
           </h1>
-          <Grid container spacing={2}></Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
+                  style={{
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
+                  }}
+                >
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
+          </Grid>
         </div>
 
         <div>
@@ -236,7 +280,33 @@ const FinancialServices = () => {
           >
             Indutry Expertise
           </h1>
-          <Grid container spacing={2}></Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={3}>
+              <a href="#" className="link2">
+                <div
+                  style={{
+                    height: "200px",
+                    backgroundColor: "#323232",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    padding: "5px",
+                  }}
+                >
+                  <div>Financial Strength and reporting</div>
+                  <p
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum id architecto autem, blanditiis labore velit quis,
+                  </p>
+                </div>
+              </a>
+            </Grid>
+          </Grid>
         </div>
 
         <div>
