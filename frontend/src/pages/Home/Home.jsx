@@ -5,6 +5,7 @@ import Services from "../../components/Home/Services";
 import Footer from "../../components/Footer/Footer";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IndustriesComponent from "../../components/Home/IndustriesComponent";
+import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 
 const Home = () => {
   return (
@@ -18,14 +19,16 @@ const Home = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          // display: "flex",
+          // justifyContent: "center",
+          // alignItems: "center",
           color: "#ffffff",
-          textAlign: "center",
-          padding: "0 100px",
+          // textAlign: "center",
+          // padding: "0 100px",
         }}
-      ></div>
+      >
+        <HomeCarousel />
+      </div>
       <Container>
         <Grid
           container

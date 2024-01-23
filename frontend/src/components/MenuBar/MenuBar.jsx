@@ -504,10 +504,17 @@ function MenuBar() {
                   <SearchIcon
                     style={{
                       fontSize: "30px",
+                      paddingLeft: "10px",
                     }}
                   />
                 </IconButton>
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <IconButton
+                  onClick={handleOpenUserMenu}
+                  sx={{ p: 0 }}
+                  style={{
+                    paddingLeft: "10px",
+                  }}
+                >
                   <PublicIcon
                     style={{
                       fontSize: "30px",

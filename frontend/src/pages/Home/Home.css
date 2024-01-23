@@ -14,3 +14,9 @@
   border-color: #1e49e2;
   text-decoration: underline;
 }
+
+.slide {
+  background-image: url("../../../public/assets/slide-1.jpg");
+  background-position: center;
+  background-size: cover;
+}

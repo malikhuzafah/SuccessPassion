@@ -390,45 +390,7 @@ const About = () => {
                   height: "100%",
                 }}
               >
-                <h3>Featured Content</h3>
-                <a href="#">
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Cooperate Reporting</div>
-                    <div>
-                      <ArrowForwardIosIcon />
-                    </div>
-                  </div>
-                </a>
-                <Divider
-                  style={{
-                    margin: "10px 0",
-                  }}
-                />
-                <a href="#">
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Cooperate Reporting</div>
-                    <div>
-                      <ArrowForwardIosIcon />
-                    </div>
-                  </div>
-                </a>
-                <Divider
-                  style={{
-                    margin: "10px 0",
-                  }}
-                />
+                <h3>Contact Us</h3>
                 <a href="#">
                   <div
                     style={{
