@@ -15,7 +15,10 @@ const Insights = () => {
           display: "flex",
           padding: "50px",
           alignItems: "center",
-          backgroundColor: "#323232",
+          backgroundImage: "url(/assets/slide-1.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div style={{ width: "60%", transform: "translateY(-50px)" }}>
@@ -83,7 +86,13 @@ const Insights = () => {
               backgroundColor: "#ffffff",
             }}
           >
-            <div style={{ height: "500px", overflow: "scroll" }}>
+            <div
+              style={{
+                height: "500px",
+                overflow: "scroll",
+                overflowX: "hidden",
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -196,6 +205,12 @@ const Insights = () => {
             height: "400px",
             display: "flex",
             alignItems: "center",
+            backgroundColor: "#f5f5f5",
+            padding: "20px",
+            backgroundImage: "url(/assets/slide-1.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div>
@@ -210,8 +225,8 @@ const Insights = () => {
       <Container>
         <Grid
           container
+          spacing={2}
           style={{
-            transform: "translateY(-50px)",
             padding: "20px",
             backgroundColor: "#ffffff",
           }}
@@ -225,7 +240,13 @@ const Insights = () => {
             }}
           >
             <h3>Trending Topics</h3>
-            <div style={{ height: "500px", overflow: "scroll" }}>
+            <div
+              style={{
+                height: "500px",
+                overflow: "scroll",
+                overflowX: "hidden",
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -333,7 +354,13 @@ const Insights = () => {
             }}
           >
             <h3>Most Viewed Articles</h3>
-            <div style={{ height: "500px", overflow: "scroll" }}>
+            <div
+              style={{
+                height: "500px",
+                overflow: "scroll",
+                overflowX: "hidden",
+              }}
+            >
               <div
                 style={{
                   display: "flex",

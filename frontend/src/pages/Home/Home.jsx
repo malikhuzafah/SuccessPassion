@@ -14,17 +14,7 @@ const Home = () => {
         style={{
           height: "100vh",
           backgroundColor: "#000000",
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1629788950017-4b8b9b5b9b0f?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfHh4eHx8fHx8fDE2MzE5NjY0NjQ&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=60)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          // display: "flex",
-          // justifyContent: "center",
-          // alignItems: "center",
           color: "#ffffff",
-          // textAlign: "center",
-          // padding: "0 100px",
         }}
       >
         <HomeCarousel />
@@ -54,6 +44,10 @@ const Home = () => {
                 display: "flex",
                 alignItems: "end",
                 padding: "20px",
+                backgroundImage: "url(/assets/slide-2.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div
@@ -89,6 +83,10 @@ const Home = () => {
                 display: "flex",
                 alignItems: "end",
                 padding: "20px",
+                backgroundImage: "url(/assets/slide-2.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div
@@ -175,7 +173,10 @@ const Home = () => {
       <div
         style={{
           padding: "100px 50px",
-          backgroundColor: "#000000",
+          backgroundImage: "url(/assets/slide-2.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           color: "#ffffff",
         }}
       >

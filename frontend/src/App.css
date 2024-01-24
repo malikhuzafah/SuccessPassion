@@ -72,3 +72,17 @@
 .careersLink2:hover {
   border-bottom: 2px solid #1e49e2;
 }
+
+.serviceLink {
+  text-decoration: none;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.serviceLink:hover {
+  border-color: #1e49e2;
+}

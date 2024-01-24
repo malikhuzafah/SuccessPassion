@@ -34,7 +34,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-assets.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
@@ -57,7 +60,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-stats.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
@@ -79,7 +85,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-energy.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
@@ -101,7 +110,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-government.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
@@ -123,7 +135,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-life.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
@@ -145,7 +160,10 @@ const IndustriesComponent = ({ home }) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  backgroundColor: "#00338d",
+                  backgroundImage: "url(/assets/home-insurance.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               ></div>
               <div>
