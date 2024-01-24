@@ -6,9 +6,74 @@ import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
 import TopBanner from "../../components/TopBanner/TopBanner";
+import AtricleTag from "../../components/Articles/ArticleTag";
+import ContactCard from "../../components/Contact/ContactCard";
 
 const BusinessProtection = () => {
   const navigate = useNavigate();
+
+  const articles = [
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+  ];
 
   const breadcrumbs = [
     <Link
@@ -55,256 +120,18 @@ const BusinessProtection = () => {
           </p>
         </div>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <a href="#" className="link2">
-              <div
-                style={{
-                  height: "200px",
-                  backgroundColor: "#323232",
-                }}
-              ></div>
-              <div
-                style={{
-                  padding: "5px",
-                }}
-              >
-                <div>Financial Strength and reporting</div>
-                <p
-                  style={{
-                    fontWeight: "normal",
-                  }}
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum id architecto autem, blanditiis labore velit quis,
-                </p>
-              </div>
-            </a>
-          </Grid>
+          {articles.map((article, index) => {
+            return (
+              <Grid item xs={12} sm={6} md={3}>
+                <AtricleTag
+                  title={article.title}
+                  desc={article.desc}
+                  img={article.img}
+                  link={article.link}
+                />
+              </Grid>
+            );
+          })}
         </Grid>
 
         <div>
@@ -318,108 +145,50 @@ const BusinessProtection = () => {
 
           <Grid container spacing={2}>
             <Grid item sm={12} md={3}>
-              <div
-                style={{
-                  border: "1px solid #000000",
-                  borderRadius: "5px",
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "10px",
-                  textAlign: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <a
-                  href=""
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <img
-                    src=""
-                    alt=""
-                    height={"150px"}
-                    width={"150px"}
-                    style={{
-                      borderRadius: "50%",
-                    }}
-                  />
-                  <h3>Ian Hancook</h3>
-                </a>
-                <p>Global head of consulting</p>
-                <p>Success Passion International</p>
-                <div
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Profile</h3>
-                  </a>
-                  <Divider orientation="vertical" variant="middle" flexItem />
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Email</h3>
-                  </a>
-                  <Divider orientation="vertical" variant="middle" flexItem />
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Phone</h3>
-                  </a>
-                </div>
-              </div>
+              <ContactCard
+                name={"Ian Hancook"}
+                designation={"Global head of consulting"}
+                company={"Success Passion International"}
+                profile={"/insights"}
+                email={"/insights"}
+                phone={"/insights"}
+                img={"/assets/slide-1.jpg"}
+              />
             </Grid>
             <Grid item sm={12} md={3}>
-              <div
-                style={{
-                  border: "1px solid #000000",
-                  borderRadius: "5px",
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "10px",
-                  textAlign: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <a
-                  href=""
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <img
-                    src=""
-                    alt=""
-                    height={"150px"}
-                    width={"150px"}
-                    style={{
-                      borderRadius: "50%",
-                    }}
-                  />
-                  <h3>Ian Hancook</h3>
-                </a>
-                <p>Global head of consulting</p>
-                <p>Success Passion International</p>
-                <div
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Profile</h3>
-                  </a>
-                  <Divider orientation="vertical" variant="middle" flexItem />
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Email</h3>
-                  </a>
-                  <Divider orientation="vertical" variant="middle" flexItem />
-                  <a href="" style={{ textDecoration: "none" }}>
-                    <h3>Phone</h3>
-                  </a>
-                </div>
-              </div>
+              <ContactCard
+                name={"Ian Hancook"}
+                designation={"Global head of consulting"}
+                company={"Success Passion International"}
+                profile={"/insights"}
+                email={"/insights"}
+                phone={"/insights"}
+                img={"/assets/slide-1.jpg"}
+              />
             </Grid>
             <Grid item sm={12} md={3}>
               <div>
                 <h2>Connect with us</h2>
                 <p>Find office Locations</p>
-                <Divider />
+                <Divider
+                  style={{
+                    background: "transparent",
+                    height: "2px",
+                    margin: "20px 0",
+                    border: "none",
+                    borderTop: "3px dotted #999",
+                  }}
+                />
                 <p>Find office Locations</p>
-                <Divider />
+                <Divider
+                  style={{
+                    background: "transparent",
+                    height: "2px",
+                    margin: "20px 0",
+                    border: "none",
+                    borderTop: "3px dotted #999",
+                  }}
+                />
                 <p>Find office Locations</p>
               </div>
             </Grid>

@@ -6,6 +6,7 @@ import CustomSeparator from "../../components/CustomSeperator/CustomSeperator";
 import { ArrowForwardIos } from "@mui/icons-material";
 import Footer from "../../components/Footer/Footer";
 import TopBanner from "../../components/TopBanner/TopBanner";
+import Article from "../../components/Articles/Article";
 
 const BusinessPerformance = () => {
   const navigate = useNavigate();
@@ -64,31 +65,14 @@ const BusinessPerformance = () => {
               // padding: "0 5px 0 0",
             }}
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  overflow: "hidden",
-                  height: "170px",
-                }}
-              >
-                <h3>Human-centric AI and the workplace: Live event</h3>
-                <p>
-                  Join us at 1:00pm CET to hear Brad Smith, President of
-                  Microsoft on AI on actions that business can take.
-                </p>
-              </div>
-            </div>
+            <Article
+              title={"Human-centric AI and the workplace: Live event"}
+              desc={
+                "Join us at 1:00pm CET to hear Brad Smith, President of Microsoft on AI on actions that business can take."
+              }
+              img={"/assets/slide-1.jpg"}
+              link={"/"}
+            />
           </Grid>
           <Grid
             item
@@ -99,28 +83,12 @@ const BusinessPerformance = () => {
               backgroundColor: "#ffffff",
             }}
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
+            <Article
+              title={"Global economic outlook"}
+              desc={"Trending cautiously amid risks."}
+              img={"/assets/slide-1.jpg"}
+              link={"/"}
+            />
           </Grid>
           <Grid
             item
@@ -132,28 +100,12 @@ const BusinessPerformance = () => {
               }
             }
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
+            <Article
+              title={"Global economic outlook"}
+              desc={"Trending cautiously amid risks."}
+              img={"/assets/slide-1.jpg"}
+              link={"/"}
+            />
           </Grid>
           <Grid
             item
@@ -165,28 +117,12 @@ const BusinessPerformance = () => {
               }
             }
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
+            <Article
+              title={"Global economic outlook"}
+              desc={"Trending cautiously amid risks."}
+              img={"/assets/slide-1.jpg"}
+              link={"/"}
+            />
           </Grid>
           <Grid
             item
@@ -198,28 +134,12 @@ const BusinessPerformance = () => {
               }
             }
           >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
+            <Article
+              title={"Global economic outlook"}
+              desc={"Trending cautiously amid risks."}
+              img={"/assets/slide-1.jpg"}
+              link={"/"}
+            />
           </Grid>
         </Grid>
 
@@ -231,7 +151,6 @@ const BusinessPerformance = () => {
           >
             Connect with us
           </h1>
-
           <Grid container spacing={2}>
             <Grid item sm={12} md={3}>
               <div

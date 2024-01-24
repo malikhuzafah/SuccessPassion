@@ -1,12 +1,101 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import BookmarkAddIcon from "@mui/icons-material/BookmarkAdd";
-import ZeroWidthStack from "../../components/ZeroWidthStack/ZeroWidthStack";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import FilterInsights from "../../components/FilterInsights/FilterInsights";
 import Footer from "../../components/Footer/Footer";
+import Article from "../../components/Articles/Article";
+import ArticleArrow from "../../components/Articles/ArticleArrow";
 
 const Insights = () => {
+  const articles = [
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      link: "/insights",
+      img: "https://picsum.photos/500/400",
+    },
+  ];
+
+  const trendingTopics = [
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+  ];
+
+  const mostViewedArticles = [
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+    {
+      title: "Insights on current trends in remote working",
+      desc: "Work from anywhere",
+      img: "https://picsum.photos/500/400",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -48,7 +137,13 @@ const Insights = () => {
               backgroundColor: "#ffffff",
             }}
           >
-            <div
+            <Article
+              title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloribus debitis perferendis aspernatur deserunt dolor"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloribus debitis perferendis aspernatur deserunt dolor"
+              link="/insights"
+              img="https://picsum.photos/500/400"
+            />
+            {/* <div
               style={{
                 backgroundColor: "#323232",
                 height: "400px",
@@ -76,7 +171,7 @@ const Insights = () => {
                   doloribus debitis perferendis aspernatur deserunt dolor
                 </p>
               </div>
-            </div>
+            </div> */}
           </Grid>
           <Grid
             item
@@ -93,102 +188,14 @@ const Insights = () => {
                 overflowX: "hidden",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
+              {articles.map((article) => (
+                <ArticleArrow
+                  title={article.title}
+                  desc={article.desc}
+                  link={article.link}
+                  img={article.img}
+                />
+              ))}
             </div>
           </Grid>
         </Grid>
@@ -247,102 +254,14 @@ const Insights = () => {
                 overflowX: "hidden",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
+              {trendingTopics.map((article) => (
+                <ArticleArrow
+                  title={article.title}
+                  desc={article.desc}
+                  link={article.link}
+                  img={article.img}
+                />
+              ))}
             </div>
           </Grid>
           <Grid
@@ -361,102 +280,14 @@ const Insights = () => {
                 overflowX: "hidden",
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "20px",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <img
-                    src="https://picsum.photos/500/400"
-                    alt=""
-                    height={"100"}
-                    width={"100"}
-                  />
-                </div>
-                <div>
-                  <h3>Insights on current trends in remote working</h3>
-                  <p>Work from anywhere</p>
-                </div>
-                <div>
-                  <ArrowForwardIosIcon />
-                </div>
-              </div>
+              {mostViewedArticles.map((article) => (
+                <ArticleArrow
+                  title={article.title}
+                  desc={article.desc}
+                  link={article.link}
+                  img={article.img}
+                />
+              ))}
             </div>
           </Grid>
         </Grid>
