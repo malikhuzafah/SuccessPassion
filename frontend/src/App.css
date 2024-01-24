@@ -86,3 +86,9 @@
 .serviceLink:hover {
   border-color: #1e49e2;
 }
+
+.article {
+  text-decoration: none;
+  color: #000000;
+  transition: all 1s ease-in-out;
+}

@@ -6,8 +6,24 @@ import Footer from "../../components/Footer/Footer";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IndustriesComponent from "../../components/Home/IndustriesComponent";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
+import Article from "../../components/Articles/Article";
 
 const Home = () => {
+  const articles = [
+    {
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
+      img: "/assets/slide-2.jpg",
+      link: "/blog",
+    },
+    {
+      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
+      img: "/assets/slide-2.jpg",
+      link: "/blog",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -28,81 +44,24 @@ const Home = () => {
             backgroundColor: "#ffffff",
           }}
         >
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            style={{
-              padding: "10px",
-              backgroundColor: "#ffffff",
-            }}
-          >
-            <div
+          {articles.map((item, index) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
               style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-                backgroundImage: "url(/assets/slide-2.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
+                padding: "10px",
+                backgroundColor: "#ffffff",
               }}
             >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  overflow: "hidden",
-                  height: "170px",
-                }}
-              >
-                <h3>Human-centric AI and the workplace: Live event</h3>
-                <p>
-                  Join us at 1:00pm CET to hear Brad Smith, President of
-                  Microsoft on AI on actions that business can take.
-                </p>
-              </div>
-            </div>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            style={{
-              padding: "10px",
-              backgroundColor: "#ffffff",
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: "#323232",
-                height: "400px",
-                display: "flex",
-                alignItems: "end",
-                padding: "20px",
-                backgroundImage: "url(/assets/slide-2.jpg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "10px",
-                  width: "100%",
-                  height: "170px",
-                  overflow: "hidden",
-                }}
-              >
-                <h3>Global economic outlook</h3>
-                <p>Trending cautiously amid risks.</p>
-              </div>
-            </div>
-          </Grid>
+              <Article
+                title={item.title}
+                desc={item.desc}
+                img={item.img}
+                link={item.link}
+              />
+            </Grid>
+          ))}
         </Grid>
       </Container>
 
