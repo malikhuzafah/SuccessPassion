@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Container, Grid } from "@mui/material";
-import Services from "../../components/Home/Services";
+import ServicesContent from "../../components/Home/ServicesComponent";
 import Footer from "../../components/Footer/Footer";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IndustriesComponent from "../../components/Home/IndustriesComponent";
@@ -11,15 +11,15 @@ import Article from "../../components/Articles/Article";
 const Home = () => {
   const articles = [
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
-      img: "/assets/slide-2.jpg",
+      title: "Transforming IT in a cloud and AI-enabled era",
+      desc: "The Future of IT",
+      img: "/assets/h-1.jpg",
       link: "/blog",
     },
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
-      img: "/assets/slide-2.jpg",
+      title: "Shaping the workforce of the future with AI",
+      desc: "The future of work",
+      img: "/assets/h-2.jpg",
       link: "/blog",
     },
   ];
@@ -66,7 +66,7 @@ const Home = () => {
       </Container>
 
       <IndustriesComponent home={true} />
-      <Services />
+      <ServicesContent />
       <Grid container>
         <Grid
           item
@@ -83,17 +83,17 @@ const Home = () => {
                 padding: "100px 50px",
               }}
             >
-              <h2>Don’t see your location?</h2>
+              <h2>Stay up to date with what matters to you</h2>
               <p
                 style={{
                   marginBottom: "40px",
                 }}
               >
-                Check out our global website. That could be a good place to
-                start.
+                Gain access to personalized content based on your interests by
+                signing up today Stay up to date with what matters to you.
               </p>
               <a href="#" className="btn2">
-                Visit global site
+                Read more
               </a>
             </div>
           </Container>
@@ -113,17 +113,16 @@ const Home = () => {
                 padding: "100px 50px",
               }}
             >
-              <h2>Don’t see your location?</h2>
+              <h2>Welcome to the Success Passion base of research.</h2>
               <p
                 style={{
                   marginBottom: "40px",
                 }}
               >
-                Check out our global website. That could be a good place to
-                start.
+                Discover our thought leadership
               </p>
               <a href="#" className="btn2">
-                Visit global site
+                Read more
               </a>
             </div>
           </Container>
@@ -132,22 +131,26 @@ const Home = () => {
       <div
         style={{
           padding: "100px 50px",
-          backgroundImage: "url(/assets/slide-2.jpg)",
+          backgroundImage: "url(/assets/hblog.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          color: "#ffffff",
+          color: "#000000",
         }}
       >
         <Container>
           <h1>Success Passion Blogs</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-            odio, in sit earum repellat dicta doloribus vitae cumque quod
-            consequuntur veritatis magni voluptatum accusamus est tenetur modi,
-            atque ad accusantium!
+            Viewpoints from Success Passion leaders and subject matter experts
+            from around the world.
           </p>
-          <a href="#" className="link">
+          <a
+            href="#"
+            className="link"
+            style={{
+              color: "#000000",
+            }}
+          >
             Read Our Blogs{" "}
             <ArrowForwardIosIcon
               style={{

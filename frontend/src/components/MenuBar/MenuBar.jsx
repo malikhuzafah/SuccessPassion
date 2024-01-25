@@ -18,7 +18,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
 import PublicIcon from "@mui/icons-material/Public";
 import MenuBarDetails from "./MenuBarDetails";
-import { ClickAwayListener } from "@mui/material";
+import { ClickAwayListener, Link } from "@mui/material";
 
 function MenuBar() {
   const [open, setOpen] = React.useState(false);
@@ -70,13 +70,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -118,13 +118,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -161,13 +161,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -204,13 +204,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -243,13 +243,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbper.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -290,13 +290,13 @@ function MenuBar() {
         name: "Business Performance",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-performance",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
       {
         name: "Business Protection",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget nunc accumsan",
         link: "/home/insights/business-protection",
-        image: "https://picsum.photos/200/300",
+        img: "/assets/sbpro.jpg",
       },
     ],
     main: {
@@ -347,24 +347,14 @@ function MenuBar() {
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Success Passion
-            </Typography>
+            <Link sx={{ display: { xs: "none", md: "flex" } }} href="/">
+              <img
+                src="/assets/logo.jpg"
+                alt="Success Passion"
+                height={50}
+                width={100}
+              />
+            </Link>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -411,7 +401,22 @@ function MenuBar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
+            <Link
+              href="/"
+              sx={{
+                display: { xs: "flex", md: "none", flexGrow: 1 },
+                mr: 1,
+              }}
+            >
+              <img
+                src="/assets/logo.jpg"
+                alt="Emerald Prestige"
+                height={50}
+                width={100}
+              />
+            </Link>
+            {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -429,7 +434,7 @@ function MenuBar() {
               }}
             >
               Success Passion
-            </Typography>
+            </Typography> */}
             <ClickAwayListener
               onClickAway={(event) => {
                 setOpen(false);
@@ -488,13 +493,13 @@ function MenuBar() {
 
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <AccountCircleIcon
                     style={{
                       fontSize: "30px",
                     }}
                   />
-                </IconButton>
+                </IconButton> */}
                 <IconButton
                   onClick={() => {
                     navigate("/auth");
@@ -508,7 +513,7 @@ function MenuBar() {
                     }}
                   />
                 </IconButton>
-                <IconButton
+                {/* <IconButton
                   onClick={handleOpenUserMenu}
                   sx={{ p: 0 }}
                   style={{
@@ -520,7 +525,7 @@ function MenuBar() {
                       fontSize: "30px",
                     }}
                   />
-                </IconButton>
+                </IconButton> */}
               </Tooltip>
               <Menu
                 sx={{ mt: "45px" }}
