@@ -8,6 +8,10 @@ import Footer from "../../components/Footer/Footer";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import AtricleTag from "../../components/Articles/ArticleTag";
 import ContactCard from "../../components/Contact/ContactCard";
+import Connect from "../../components/Contact/Connect";
+import SignUpCard from "../../components/Contact/SignupCard";
+import ArticleFull from "../../components/Articles/ArticleFull";
+import BottomNav from "../../components/BottomNav/BottomNav";
 
 const BusinessProtection = () => {
   const navigate = useNavigate();
@@ -167,72 +171,10 @@ const BusinessProtection = () => {
               />
             </Grid>
             <Grid item sm={12} md={3}>
-              <div>
-                <h2>Connect with us</h2>
-                <p>Find office Locations</p>
-                <Divider
-                  style={{
-                    background: "transparent",
-                    height: "2px",
-                    margin: "20px 0",
-                    border: "none",
-                    borderTop: "3px dotted #999",
-                  }}
-                />
-                <p>Find office Locations</p>
-                <Divider
-                  style={{
-                    background: "transparent",
-                    height: "2px",
-                    margin: "20px 0",
-                    border: "none",
-                    borderTop: "3px dotted #999",
-                  }}
-                />
-                <p>Find office Locations</p>
-              </div>
+              <Connect />
             </Grid>
             <Grid item sm={12} md={3}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  height: "100%",
-                  backgroundColor: "#323232",
-                  color: "#ffffff",
-                }}
-              >
-                <div
-                  style={{
-                    padding: "15px",
-                  }}
-                >
-                  <h3>Stay up to date with what matters to you</h3>
-                </div>
-                <div
-                  style={{
-                    padding: "15px",
-                  }}
-                >
-                  <p>
-                    Gain access to personalized content based on your interests
-                    by signing up today
-                  </p>
-                  <button
-                    style={{
-                      width: "100%",
-                      padding: "15px",
-                      backgroundColor: "#ffffff",
-                      border: "none",
-                      cursor: "pointer",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    Sign up today
-                  </button>
-                </div>
-              </div>
+              <SignUpCard />
             </Grid>
           </Grid>
         </div>
@@ -245,33 +187,12 @@ const BusinessProtection = () => {
           >
             Read our Client stories
           </h1>
-          <a
-            href=""
-            style={{
-              textDecoration: "none",
-              color: "#000000",
-            }}
-          >
-            <div
-              style={{
-                height: "400px",
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "#323232",
-                padding: "20px",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#ffffff",
-                  padding: "50px",
-                }}
-              >
-                <h3>Client Stories</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-              </div>
-            </div>
-          </a>
+          <ArticleFull
+            title={"Client Stories"}
+            desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit."}
+            img={"/assets/slide-2.jpg"}
+            link={"/insights"}
+          />
         </div>
 
         <div>
@@ -282,176 +203,7 @@ const BusinessProtection = () => {
           >
             A guide to the business implications of COVID-19
           </h1>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <a href="#" className="link2">
-                <div
-                  style={{
-                    border: "1px solid #00338d",
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>Financial Strength and reporting</div>
-                    <div>
-                      <ArrowForwardIos />
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </Grid>
-          </Grid>
+          <BottomNav />
         </div>
       </Container>
       <Footer />

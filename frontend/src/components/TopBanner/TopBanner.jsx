@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-const TopBanner = ({ title, desc }) => {
+const TopBanner = ({ title, desc, img }) => {
   return (
     <div
       style={{
@@ -11,6 +11,10 @@ const TopBanner = ({ title, desc }) => {
         backgroundColor: "#323232",
         padding: "20px",
         color: "#ffffff",
+        backgroundImage: `url(${img})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Container>

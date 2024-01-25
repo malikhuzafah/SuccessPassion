@@ -9,6 +9,7 @@ import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Container, Divider, Grid, Link } from "@mui/material";
+import Article from "../Articles/Article";
 
 const MenuBarDetails = ({ open, setOpen, anchorRef, menuBarDetails }) => {
   const handleClose = (event) => {
@@ -125,70 +126,19 @@ const MenuBarDetails = ({ open, setOpen, anchorRef, menuBarDetails }) => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={4}
-                    style={{
-                      paddingTop: "20px",
-                      paddingBottom: "20px",
-                    }}
-                  >
-                    <div
+                  {menuBarDetails.articles.map((article) => (
+                    <Grid
+                      item
+                      xs={12}
+                      md={4}
                       style={{
-                        backgroundColor: "#323232",
-                        height: "350px",
-                        display: "flex",
-                        alignItems: "end",
-                        padding: "20px",
+                        paddingTop: "20px",
+                        paddingBottom: "20px",
                       }}
                     >
-                      <div
-                        style={{
-                          backgroundColor: "#ffffff",
-                          padding: "10px",
-                          width: "100%",
-                          overflow: "hidden",
-                          height: "170px",
-                        }}
-                      >
-                        <h3>{menuBarDetails.articles[0].name}</h3>
-                        <p>{menuBarDetails.articles[0].desc}</p>
-                      </div>
-                    </div>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={4}
-                    style={{
-                      paddingTop: "20px",
-                      paddingBottom: "20px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        backgroundColor: "#323232",
-                        height: "350px",
-                        display: "flex",
-                        alignItems: "end",
-                        padding: "20px",
-                      }}
-                    >
-                      <div
-                        style={{
-                          backgroundColor: "#ffffff",
-                          padding: "10px",
-                          width: "100%",
-                          overflow: "hidden",
-                          height: "170px",
-                        }}
-                      >
-                        <h3>{menuBarDetails.articles[1].name}</h3>
-                        <p>{menuBarDetails.articles[1].desc}</p>
-                      </div>
-                    </div>
-                  </Grid>
+                      <Article title={article.name} desc={article.desc} />
+                    </Grid>
+                  ))}
                 </Grid>
               </Container>
               {/* <MenuList

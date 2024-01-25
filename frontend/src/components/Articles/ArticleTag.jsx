@@ -8,6 +8,9 @@ const ArticleTag = ({ title, desc, img, link }) => {
           height: "200px",
           backgroundColor: "#323232",
           backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <div
